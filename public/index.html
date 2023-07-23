@@ -6,6 +6,7 @@
   <script src="bundle.js" async></script>
 </head>
 <body>
+  <!-- 0. Hello, Stimulus -->
   <!-- <h1 data-controller="example"></h1>
   <div class="another-div" data-controller="hello">
     <div>
@@ -13,8 +14,9 @@
       <button data-action="click->hello#greet">Greet!</button>
     </div>
   </div> -->
-  
-  <div data-controller="clipboard">
+
+  <!-- 1. Building something real -->
+  <!-- <div data-controller="clipboard">
     PIN: <input type="text" value="Marcel Fonteles" readonly data-clipboard-target="source">
     <button data-action="clipboard#copy">Copy to Clipboard</button>
   </div>
@@ -37,6 +39,12 @@
   <div data-controller="clipboard">
     PIN: <p data-clipboard-target="source" type="text" value="paragraph" readonly>paragraph</p>
     <a href="#" data-action="clipboard#copy">Copy to Clipboard</a>
+  </div> -->
+
+  <!-- 2. Designing for resilience -->
+  <div data-controller="clipboard" data-clipboard-supported-class="clipboard--supported">
+    PIN: <input type="text" value="Marcel Vieira" readonly data-clipboard-target="source">
+    <button data-action="clipboard#copy" class="clipboard-button">Copy to Clipboard</button>
   </div>
 </body>
 </html>
