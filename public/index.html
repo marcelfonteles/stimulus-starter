@@ -6,12 +6,37 @@
   <script src="bundle.js" async></script>
 </head>
 <body>
-  <h1 data-controller="example"></h1>
+  <!-- <h1 data-controller="example"></h1>
   <div class="another-div" data-controller="hello">
     <div>
       <input data-hello-target='username' data-action="keypress->hello#keyPress" type="text" />
       <button data-action="click->hello#greet">Greet!</button>
     </div>
+  </div> -->
+  
+  <div data-controller="clipboard">
+    PIN: <input type="text" value="Marcel Fonteles" readonly data-clipboard-target="source">
+    <button data-action="clipboard#copy">Copy to Clipboard</button>
+  </div>
+
+  <div data-controller="clipboard">
+    PIN: <input type="text" value="Marcel Vieira" readonly data-clipboard-target="source">
+    <button data-action="clipboard#copy">Copy to Clipboard</button>
+  </div>
+
+  <div data-controller="clipboard">
+    PIN: <input data-clipboard-target="source" type="text" value="3737" readonly>
+    <a href="#" data-action="clipboard#copy">Copy to Clipboard</a>
+  </div>
+
+  <div data-controller="clipboard">
+    PIN: <textarea data-clipboard-target="source" readonly>text area</textarea>
+    <a href="#" data-action="clipboard#copy">Copy to Clipboard</a>
+  </div>
+
+  <div data-controller="clipboard">
+    PIN: <p data-clipboard-target="source" type="text" value="paragraph" readonly>paragraph</p>
+    <a href="#" data-action="clipboard#copy">Copy to Clipboard</a>
   </div>
 </body>
 </html>
