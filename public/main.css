@@ -9,3 +9,17 @@ body {
 .clipboard--supported .clipboard-button {
   display: initial;
 }
+
+
+.animate {
+  position: relative;
+}
+
+.animate div {
+  position: absolute;
+  font-size: 64px;
+  opacity: 0;
+  /* transition-delay: .3s;
+  transition-property: opacity; */
+  transition:opacity 500ms;
+}

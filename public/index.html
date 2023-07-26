@@ -42,9 +42,33 @@
   </div> -->
 
   <!-- 2. Designing for resilience -->
-  <div data-controller="clipboard" data-clipboard-supported-class="clipboard--supported">
+  <!-- <div data-controller="clipboard" data-clipboard-supported-class="clipboard--supported">
     PIN: <input type="text" value="Marcel Vieira" readonly data-clipboard-target="source">
     <button data-action="clipboard#copy" class="clipboard-button">Copy to Clipboard</button>
+  </div> -->
+
+  <!-- 3. Managing state (Slideshow) -->
+  <!-- <div data-controller="slideshow" class="animate" data-index="1" data-slideshow-abc-value="opa" data-slideshow-index-value="0">
+    <button data-action="slideshow#previous"> ← </button>
+    <button data-action="slideshow#next"> → </button>
+  
+    <div data-slideshow-target="slide"><img src="https://images.unsplash.com/photo-1687256419577-06517a5f3057?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=201&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY5MDMyODUwMA&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=300" /></div>
+    <div data-slideshow-target="slide"><img src="https://images.unsplash.com/photo-1689327021885-c9091f4a2aa8?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=201&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY5MDMyODUwNA&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=300" /></div>
+    <div data-slideshow-target="slide"><img src="https://images.unsplash.com/photo-1688939302754-03a1b99870b7?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=201&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY5MDMyODUwOA&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=300" /></div>
+    <div data-slideshow-target="slide">A</div>
+    <div data-slideshow-target="slide">B</div>
+    <div data-slideshow-target="slide">C</div>
+    <div data-slideshow-target="slide">D</div>
+    <div data-slideshow-target="slide">E</div>
+    <div data-slideshow-target="slide">F</div>
+  </div> -->
+
+  <!-- 4. Working with external resources -->
+  <!-- <div data-controller="content-loader" data-content-loader-url-value="/messages.html" data-content-loader-refresh-interval-value="5000"></div> -->
+
+  <div data-controller="content-loader">
+    <a href="#" data-content-loader-url-param="/messages.html" data-action="content-loader#load">Messages</a>
+    <a href="#" data-content-loader-url-param="/comments.html" data-action="content-loader#load">Comments</a>
   </div>
 </body>
 </html>
